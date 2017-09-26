@@ -12,8 +12,16 @@ public class Problem2 extends Robot
     }
     
     public void buildFence() {
-        
+        faceNorth();
+        findPile();
+        findFence();
+        layFence();
     }
-   
+    
+    public void faceNorth() {
+        while(!facingNorth) {
+            turnLeft();
+        }
+    }
 }
 
